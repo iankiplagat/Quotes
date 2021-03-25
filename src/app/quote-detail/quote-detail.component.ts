@@ -1,15 +1,36 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Quote } from '../quote';
 
 @Component({
   selector: 'app-quote-detail',
   templateUrl: './quote-detail.component.html',
-  styleUrls: ['./quote-detail.component.css']
+  styleUrls: ['./quote-detail.component.css'],
 })
 export class QuoteDetailComponent implements OnInit {
+  upVote: number;
+  downVote: number;
 
-  constructor() { }
+  @Input() quote: Quote;
+  @Output() isComplete = new EventEmitter<boolean>();
 
-  ngOnInit(): void {
+  quoteDelete(complete: boolean) {
+    this.isComplete.emit(complete);
   }
 
+  constructor() {
+    this.upVote = 0;
+    this.downVote = 0;
+  }
+
+  voteUp(): boolean {
+    this.upVote += 1;
+    return false;
+  }
+
+  voteDown(): boolean {
+    this.downVote += 1;
+    return false;
+  }
+
+  ngOnInit() {}
 }
