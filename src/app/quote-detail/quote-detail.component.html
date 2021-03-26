@@ -5,15 +5,15 @@
 
   <div class="buttons">
     <button type="button" name="button" class="btn" (click)="voteUp()">
-      <i class="fa fa-thumbs-up"></i>
+      <i class="voteup fa fa-thumbs-up"></i>
     </button>
     {{ upVote }}
     <button type="button" name="button" class="btn" (click)="voteDown()">
-      <i class="fa fa-thumbs-down"></i>
+      <i class="votedown fa fa-thumbs-down"></i>
     </button>
     {{ downVote }}
 
-    <button class="btn btn-danger" (click)="quoteDelete(true)">
+    <button class="delete-btn btn btn-danger" (click)="quoteDelete(true)">
       <i class="fa fa-trash"></i>
     </button>
   </div>
