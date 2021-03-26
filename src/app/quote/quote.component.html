@@ -22,9 +22,9 @@
     text-align: center;
   }
 
- .container {
-     padding-top: 30px;
- }
+  .container {
+    padding-top: 30px;
+  }
 
   .card-container {
     display: flex;
@@ -61,17 +61,20 @@
   }
 </style>
 
-<div class="container">
+<div>
   <h1><strong>Quotes Digest</strong></h1>
-  <ul>
-    <div *ngFor="let quote of quotes;let i = index">
-      <li>
-        {{ quote.name }}
-        <app-quote-detail [quote]="quote"></app-quote-detail>
-      </li>
-    </div>
-  </ul>
 </div>
+<ul>
+  <div *ngFor="let quote of quotes; let i = index">
+    <li>
+      {{ quote.name }}
+      <app-quote-detail
+        [quote]="quote"
+        (isComplete)="quoteDelete($event, i)"
+      ></app-quote-detail>
+    </li>
+  </div>
+</ul>
 
 <div>
   <!-- Footer -->
