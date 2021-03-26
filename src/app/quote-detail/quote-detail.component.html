@@ -1,8 +1,7 @@
 <div class="row card">
   <p>
-    <strong>{{ quote.name }}</strong>
+    <strong>{{ quote.quote }}</strong>
   </p>
-  <p></p>
 
   <div class="buttons">
     <button type="button" name="button" class="btn" (click)="voteUp()">
@@ -14,8 +13,8 @@
     </button>
     {{ downVote }}
 
-    <button class="btn btn-danger" (click)="quoteDelete(true)">Delete Quote
-      <!-- <i class="fa fa-trash"></i> -->
+    <button class="btn btn-danger" (click)="quoteDelete(true)">
+      <i class="fa fa-trash"></i>
     </button>
   </div>
 </div>

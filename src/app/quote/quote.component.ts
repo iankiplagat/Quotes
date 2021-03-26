@@ -9,27 +9,27 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
     new Quote(
-      1,
+      'Kasparov',
       '"The greatest glory in living lies not in never falling, but in rising every time we fall." -Nelson Mandela',
-      new Date(2022, 4, 27)
+      new Date(2020, 4, 27)
     ),
     new Quote(
-      2,
+      'Anna',
       "\"If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough.\" -Oprah Winfrey",
       new Date(2018, 4, 27)
     ),
     new Quote(
-      3,
+      'Meyo',
       '"It is during our darkest moments that we must focus to see the light." -Aristotle',
-      new Date(2023, 4, 27)
+      new Date(2015, 4, 27)
     ),
     new Quote(
-      4,
+      'Jaguar',
       '"The future belongs to those who believe in the beauty of their dreams." -Eleanor Roosevelt',
       new Date(2018, 4, 27)
     ),
     new Quote(
-      5,
+      'Eve',
       '"Life is really simple, but we insist on making it complicated." -Confucius',
       new Date(2018, 4, 27)
     ),

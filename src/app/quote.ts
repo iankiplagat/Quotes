@@ -1,7 +1,7 @@
 export class Quote {
   constructor(
-    public id: number,
     public name: string,
-    public completeDate: Date
+    public quote: string,
+    public postTime: Date
   ) {}
 }
