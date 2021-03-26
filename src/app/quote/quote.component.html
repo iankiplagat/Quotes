@@ -64,10 +64,12 @@
 <div class="container">
   <h1><strong>Quotes Digest</strong></h1>
   <ul>
-    <li *ngFor="let quote of quotes">
-      {{ quote.name }}
-      <app-quote-detail [quote]="quote"></app-quote-detail>
-    </li>
+    <div *ngFor="let quote of quotes;let i = index">
+      <li>
+        {{ quote.name }}
+        <app-quote-detail [quote]="quote"></app-quote-detail>
+      </li>
+    </div>
   </ul>
 </div>
 
