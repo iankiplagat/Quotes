@@ -85,7 +85,7 @@
         <div *ngFor="let quote of quotes; let i = index">
           <p>
             Posted by <strong>{{ quote.name }}</strong>
-            <span id="time">{{ quote.postTime | dateCount }}</span>
+            <span id="time"> {{ quote.postTime | dateCount }}</span> days ago
           </p>
           <app-quote-detail
             [quote]="quote"

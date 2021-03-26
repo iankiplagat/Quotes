@@ -11,12 +11,12 @@ export class QuoteComponent implements OnInit {
     new Quote(
       'Kasparov',
       '"The greatest glory in living lies not in never falling, but in rising every time we fall." -Nelson Mandela',
-      new Date(2020, 4, 27)
+      new Date(2021, 1, 26)
     ),
     new Quote(
       'Anna',
       "\"If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough.\" -Oprah Winfrey",
-      new Date(2018, 4, 27)
+      new Date(2019, 4, 27)
     ),
     new Quote(
       'Meyo',
