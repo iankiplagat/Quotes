@@ -15,3 +15,17 @@
     color: rgb(30, 99, 30);
 }
 
+#feed {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.bg {
+    background: url(./assets/bg.jpg);
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.bg-1 {
+    background: url(./assets/bg.jpg);
+}

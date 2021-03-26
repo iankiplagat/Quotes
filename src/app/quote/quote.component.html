@@ -22,8 +22,14 @@
     text-align: center;
   }
 
-  .container {
+  .background-color-theme {
+    color: rgb(21, 21, 48);
+    background: url();
+  }
+
+  .main {
     padding-top: 30px;
+    margin-top: 0;
   }
 
   .post {
@@ -31,9 +37,9 @@
   }
 
   #post {
-    padding-top: 10px;
-    padding-bottom: 0px;
-    margin-inline: -15px;
+    padding-top: 20px;
+    margin-bottom: 0;
+    margin-inline: -13px;
   }
 
   .create {
@@ -75,17 +81,22 @@
   }
 </style>
 
-<div class="container">
+<div class="container-fluid background-color-theme">
+  <h1 class="main"><strong>Quotes Digest</strong></h1>
+</div>
+<hr />
+<div class="container-fluid">
   <div class="bg">
-    <h1><strong>Quotes Digest</strong></h1>
-    <div class="col-md-12">
+    <div class="container quotes-post">
       <h2 class="text-center">Feed</h2>
-      <hr />
       <ul class="post">
         <div *ngFor="let quote of quotes; let i = index">
-          <p>
-            Posted by <strong>{{ quote.name }}</strong>
-            <span id="time"> {{ quote.postTime | dateCount }}</span> days ago
+          <p id="post">
+            <em
+              >Posted by <strong>{{ quote.name }}</strong>
+              <span id="time"> {{ quote.postTime | dateCount }}</span> days
+              ago</em
+            >
           </p>
           <app-quote-detail
             [quote]="quote"
@@ -95,7 +106,10 @@
       </ul>
     </div>
   </div>
-  <div class="bg1">
+</div>
+<hr />
+<div class="bg1">
+  <div class="container">
     <div class="create col-md-12">
       <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
     </div>
