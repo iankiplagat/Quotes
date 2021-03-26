@@ -23,7 +23,17 @@
   }
 
   .container {
-    padding-top: 30px;
+    padding-top: 0;
+  }
+
+  .post {
+    margin: 0;
+  }
+
+  #post {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-inline: -15px;
   }
 
   .card-container {
@@ -61,18 +71,18 @@
   }
 </style>
 
-<div>
+<div class="container">
   <h1><strong>Quotes Digest</strong></h1>
+  <ul class="post">
+    <div *ngFor="let quote of quotes; let i = index">
+      <p id="post">Posted by</p>
+      <app-quote-detail
+        [quote]="quote"
+        (isComplete)="Deletequote($event, i)"
+      ></app-quote-detail>
+    </div>
+  </ul>
 </div>
-<ul>
-  <div *ngFor="let quote of quotes; let i = index">
-    <p>Posted by</p>
-    <app-quote-detail
-      [quote]="quote"
-      (isComplete)="quoteDelete($event, i)"
-    ></app-quote-detail>
-  </div>
-</ul>
 
 <div>
   <!-- Footer -->
