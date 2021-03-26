@@ -1,3 +1,7 @@
 export class Quote {
-  constructor(public id: number, public name: string, public postTime:Date) {}
+  constructor(
+    public id: number,
+    public name: string,
+    public completeDate: Date
+  ) {}
 }

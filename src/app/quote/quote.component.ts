@@ -11,7 +11,7 @@ export class QuoteComponent implements OnInit {
     new Quote(
       1,
       '"The greatest glory in living lies not in never falling, but in rising every time we fall." -Nelson Mandela',
-      new Date(2018, 4, 27)
+      new Date(2022, 4, 27)
     ),
     new Quote(
       2,
@@ -21,7 +21,7 @@ export class QuoteComponent implements OnInit {
     new Quote(
       3,
       '"It is during our darkest moments that we must focus to see the light." -Aristotle',
-      new Date(2018, 4, 27)
+      new Date(2023, 4, 27)
     ),
     new Quote(
       4,

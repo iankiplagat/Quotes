@@ -66,13 +66,11 @@
 </div>
 <ul>
   <div *ngFor="let quote of quotes; let i = index">
-    <li>
-      {{ quote.name }}
-      <app-quote-detail
-        [quote]="quote"
-        (isComplete)="quoteDelete($event, i)"
-      ></app-quote-detail>
-    </li>
+    <p>Posted by</p>
+    <app-quote-detail
+      [quote]="quote"
+      (isComplete)="quoteDelete($event, i)"
+    ></app-quote-detail>
   </div>
 </ul>
 
