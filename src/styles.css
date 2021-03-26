@@ -3,29 +3,36 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 .delete-btn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 10px;
-    height: 20px; 
-    margin-left: 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 20px;
+  margin-left: 15px;
 }
 
 .voteup {
-    color: rgb(30, 99, 30);
+  color: rgb(30, 99, 30);
 }
 
 #feed {
-    padding-top: 10px;
-    padding-left: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 .bg {
-    background: url(./assets/bg.jpg);
-    padding-top: 20px;
-    padding-bottom: 50px;
+  background: url(./assets/bg.jpg);
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-position: center;
 }
 
-.bg-1 {
-    background: url(./assets/bg.jpg);
+.bg1 {
+  background: url(./assets/photo.jpg);
+  padding-bottom: 50px;
+  /* opacity: 0.2; */
+}
+
+.transparent {
+  /* background: transparent; */
 }
