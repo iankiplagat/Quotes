@@ -13,6 +13,13 @@ To view the site, open the Github repository link provided below on the README, 
 Step 1 : Clone this repository using git clone https://github.com/kasparov-creat/Quotes.git, or downloading a ZIP file of the code.
 Step 2 : The repository, if downloaded as a .zip file will need to be extracted on your preferred location and opened.
 
+## Languages
+
+- Typescript
+- Javascript
+- HTML
+- CSS
+
 ## Known Bugs
 
 No known bugs
@@ -21,8 +28,8 @@ No known bugs
 
 Please feel free to contact me incase you run into any issues or have questions, ideas or concerns. You can contact me or make a contribution to the code. Please find my contact information listed below:
 
-Email: ianjkiplagat@gmail.com
-Telephone: +254742579020
+- Email: ianjkiplagat@gmail.com
+- Telephone: +254742579020
 
 ## Development server
 
