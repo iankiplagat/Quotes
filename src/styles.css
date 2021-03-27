@@ -30,9 +30,12 @@
 .bg1 {
   background: url(./assets/photo.jpg);
   padding-bottom: 50px;
-  /* opacity: 0.2; */
+  background-position:center;
 }
 
 .transparent {
-  /* background: transparent; */
-}
+  color: #fff;
+  zoom: 1;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  }

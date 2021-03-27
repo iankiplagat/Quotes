@@ -40,7 +40,6 @@
     padding-top: 4px;
     padding-bottom: 4px;
     margin-bottom: 15px;
-    background: rgba(0, 0, 0, 0.09);
   }
 
   #post {
@@ -82,20 +81,30 @@
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   }
 
+  .footer {
+    background-color: 	#d3d6d8;
+    margin-top: 80px;
+  }
 </style>
+
+<!-- Nav bar -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="/src/assets/logo.jpg" width="30" height="30" alt="" />
+  </a>
+</nav>
 
 <div class="container-fluid background-color-theme">
   <h1 class="main"><strong>Quotes Digest</strong></h1>
 </div>
 <hr />
 <div class="container-fluid">
-  <h2 class="text-center title-of-feed">Feed</h2>
+  <h2 class="text-center bg-light title-of-feed">Feed</h2>
   <div class="bg">
     <div class="container">
-     
       <ul class="post">
         <div *ngFor="let quote of quotes; let i = index">
-          <p id="post" style="color: white;">
+          <p id="post" style="color: white">
             <em
               >Posted by <strong>{{ quote.name }}</strong>
               <span id="time"> {{ quote.postTime | dateCount }}</span> days
@@ -113,33 +122,31 @@
 </div>
 <hr />
 <div class="bg1">
-  <div class="container transparent">
-    <div class="create col-md-12 transparent">
+  <div class="container">
+    <div class="create col-md-12">
       <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
     </div>
   </div>
 </div>
 
-<div>
-  <!-- Footer -->
-  <footer class="footer">
-    <!-- Social links -->
-    <div class="card-container">
-      <a class="circle-link" title="Facebook" href="https://www.facebook.com/"
-        ><i class="fa fa-facebook" aria-hidden="true"></i
-      ></a>
+<!-- Footer -->
+<footer class="footer">
+  <!-- Social links -->
+  <div class="card-container">
+    <a class="circle-link" title="Facebook" href="https://www.facebook.com/"
+      ><i class="fa fa-facebook" aria-hidden="true"></i
+    ></a>
 
-      <a class="circle-link" title="Instagram" href="https://www.instagram.com/"
-        ><i class="fa fa-instagram" aria-hidden="true"></i
-      ></a>
+    <a class="circle-link" title="Instagram" href="https://www.instagram.com/"
+      ><i class="fa fa-instagram" aria-hidden="true"></i
+    ></a>
 
-      <a class="circle-link" title="Twitter" href="https://twitter.com/"
-        ><i class="fa fa-twitter" aria-hidden="true"></i
-      ></a>
+    <a class="circle-link" title="Twitter" href="https://twitter.com/"
+      ><i class="fa fa-twitter" aria-hidden="true"></i
+    ></a>
 
-      <a class="circle-link" title="Gmail" href="mailto:ianjkiplagat@gmail.com"
-        ><i class="fa fa-envelope" aria-hidden="true"></i>
-      </a>
-    </div>
-  </footer>
-</div>
+    <a class="circle-link" title="Gmail" href="mailto:ianjkiplagat@gmail.com"
+      ><i class="fa fa-envelope" aria-hidden="true"></i>
+    </a>
+  </div>
+</footer>
