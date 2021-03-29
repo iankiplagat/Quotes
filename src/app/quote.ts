@@ -3,6 +3,8 @@ export class Quote {
     public name: string,
     public quote: string,
     public author: string,
-    public postTime: Date
+    public postTime: Date,
+    public upVote: number,
+    public downVote: number
   ) {}
 }

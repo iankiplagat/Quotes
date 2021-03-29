@@ -1,98 +1,4 @@
-<style>
-  /* Custom styles */
-  :host {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-      "Segoe UI Symbol";
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 8px 0;
-    padding-bottom: 20px;
-    text-align: center;
-  }
-
-  .background-color-theme {
-    color: rgb(21, 21, 48);
-    background: url();
-  }
-
-  .main {
-    padding-top: 30px;
-    margin-top: 0;
-  }
-
-  .post {
-    margin: 0;
-  }
-
-  .title-of-feed {
-    padding-top: 4px;
-    padding-bottom: 4px;
-    margin-bottom: 15px;
-  }
-
-  #post {
-    padding-top: 20px;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-inline: -13px;
-  }
-
-  .create {
-    padding-top: 80px;
-  }
-
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 6px;
-    padding-bottom: 6px;
-  }
-
-  .circle-link {
-    height: 40px;
-    width: 40px;
-    border-radius: 40px;
-    margin: 8px;
-    background-color: white;
-    border: 1px solid #eeeeee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: 1s ease-out;
-  }
-
-  .circle-link:hover {
-    transform: translateY(-0.25rem);
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-  }
-
-  .footer {
-    background-color: 	#d3d6d8;
-    margin-top: 80px;
-  }
-</style>
-
-<!-- Nav bar -->
-<nav class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="#">
-    <img src="/src/assets/logo.jpg" width="30" height="30" alt="" />
-  </a>
-</nav>
+<style></style>
 
 <div class="container-fluid background-color-theme">
   <h1 class="main"><strong>Quotes Digest</strong></h1>
@@ -112,6 +18,7 @@
             >
           </p>
           <app-quote-detail
+            [i]="i"
             [quote]="quote"
             (isComplete)="deleteQuote($event, i)"
           ></app-quote-detail>

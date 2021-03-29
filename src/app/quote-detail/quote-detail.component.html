@@ -1,8 +1,10 @@
 <div class="row card">
-  <p id="feed">
-    <strong>{{ quote.quote }}</strong> <strong> ~</strong>
-    <strong> {{ quote.author }}</strong>
-  </p>
+  <div id="feed">
+    <p appHighlight style="margin: 10px;">
+      <strong>{{ quote.quote }}</strong> <strong> ~</strong>
+      <strong> {{ quote.author }}</strong>
+    </p>
+  </div>
 
   <div class="buttons">
     <button type="button" name="button" class="btn" (click)="voteUp()">

@@ -11,27 +11,43 @@ export class QuoteDetailComponent implements OnInit {
   downVote: number;
 
   @Input() quote: Quote;
+  @Input() i: number;
   @Output() isComplete = new EventEmitter<boolean>();
 
   quoteDelete(complete: boolean) {
     this.isComplete.emit(complete);
   }
 
-  newQuote = new Quote('', '', '', new Date());
+  newQuote = new Quote('', '', '', new Date(), 0, 0);
   constructor() {
     this.upVote = 0;
     this.downVote = 0;
   }
 
-  voteUp(): boolean {
+  voteUp() {
     this.upVote += 1;
-    return false;
   }
 
-  voteDown(): boolean {
+  voteDown() {
     this.downVote += 1;
-    return false;
   }
+
+  // preNum: number;
+  // lastNum: number;
+  // counter: number;
+
+  // highestUpvote() {
+  //   this.preNum = 0;
+  //   this.lastNum = 0;
+
+  //   for (this.counter = 0; this.counter < this.quotes.length; this.counter++) {
+  //     this.lastNum = this.quote[this.counter].upVote;
+  //     if (this.lastNum > this.preNum) {
+  //       this.preNum = this.lastNum;
+  //     }
+  //   }
+  //   return this.preNum;
+  // }
 
   ngOnInit() {}
 }
